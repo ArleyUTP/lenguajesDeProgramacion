@@ -16,3 +16,9 @@ function factorial(n: number): number {
 
 console.log(factorial(5));
 console.log(factorial(0));
+
+let numeros: number[] = [1, 2, 3, 4, 5];
+const cuadrados = (numero: number)=> numero*numero;
+const esPar = (numero:number) => numero % 2 === 0;
+let nuevaLista = numeros.map(cuadrados).filter(esPar);
+console.log(nuevaLista);
